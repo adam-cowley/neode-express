@@ -73,10 +73,10 @@ module.exports = {
 }
 
 // Resource
-api.use('/api/users/:user/posts', resouce(neode, 'Post'))
+api.use('/api/users/:user/posts', resource(neode, 'Post'))
 
 // Application call
-request.post('http://localhost:3000/api/users/user', { data: { content: 'Lorem ipsum' } })
+axios.post('http://localhost:3000/api/users/user', { data: { content: 'Lorem ipsum' } })
 ```
 This would take the `:user` value from the URL, combine it with `data` in the request and pass the info through to `neode.create()`.
 
