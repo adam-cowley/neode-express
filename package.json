@@ -1,0 +1,36 @@
+{
+  "name": "@neode/express",
+  "version": "0.1.0",
+  "description": "Neode REST endpoints for Express",
+  "main": "src/index.js",
+  "scripts": {
+    "tdd": "NODE_ENV=dev ./node_modules/.bin/mocha --watch test/index.js",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha test/**/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-cowley/neode-express.git"
+  },
+  "keywords": [
+    "neo4j",
+    "neode",
+    "express"
+  ],
+  "author": "Adam Cowley <github@adamcowley.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adam-cowley/neode-express/issues"
+  },
+  "homepage": "https://github.com/adam-cowley/neode-express#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "neode": "^0.3.4",
+    "nodemon": "^1.19.3"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "mocha": "^6.2.1",
+    "supertest": "^4.0.2"
+  }
+}
